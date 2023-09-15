@@ -24,3 +24,5 @@ $ docker compose up
 
 Конвертировать валюты можно запросом: \
 [/api/rates/?from=USD&to=RUB&value=3](http://127.0.0.1:8000/api/rates/?from=USD&to=RUB&value=3) 
+
+Свагер доступен по [ссылке](http://127.0.0.1:8000/docs/)
