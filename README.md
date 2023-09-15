@@ -1,15 +1,6 @@
 # Конвертер валют по курсу ЦБ
 
 ## Как развернуть local-окружение
-
-Задайте переменные окружения (можно в файле .env в корне проекта):
-
-```shell
-ALLOWED_HOSTS='127.0.0.1, localhost'
-DEBUG=True
-SECRET_KEY=123456
-```
-
 Для запуска ПО вам понадобятся Docker и Docker Compose. Инструкции по их установке ищите на официальных
 сайтах:
 
@@ -29,13 +20,7 @@ $ docker compose up
 ```
 
 
-Запуск тестов:
-```shell
-$ docker compose run --rm django python manage.py test
-```
-
 ## Как использовать
 
-Конвертировать валюты можно двумя способами: \
-[/api/rates/usd/rub/3](http://127.0.0.1:8000/api/rates/usd/rub/3) \
+Конвертировать валюты можно запросом: \
 [/api/rates/?from=USD&to=RUB&value=3](http://127.0.0.1:8000/api/rates/?from=USD&to=RUB&value=3) 
